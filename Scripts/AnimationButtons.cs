@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class AnimationButtons : MonoBehaviour
 {
-    public Sprite layer_passive, layer_active;
+    public Sprite layerPassive, layerActive;
     void OnMouseDown()
     {
-        GetComponent<SpriteRenderer>().sprite = layer_active;
+        GetComponent<SpriteRenderer>().sprite = layerActive;
     }
     void OnMouseUp()
     {
-        GetComponent<SpriteRenderer>().sprite = layer_passive;
+        GetComponent<SpriteRenderer>().sprite = layerPassive;
     }
 }

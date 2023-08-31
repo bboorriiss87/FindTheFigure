@@ -223,8 +223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5264df0e71e0d07458018bd6544497fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer_passive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
-  layer_active: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
+  layerPassive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
+  layerActive: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
 --- !u!58 &77482376
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1396,10 +1396,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5aaf6d23afdbb43ae3be59c3c8745f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SquareTopRight: {fileID: 672859576}
-  SquareBottomRight: {fileID: 1622141564}
-  SquareBottomLeft: {fileID: 1082207357}
-  SquareTopLeft: {fileID: 1052535332}
+  squareTopRight: {fileID: 672859576}
+  squareBottomRight: {fileID: 1622141564}
+  squareBottomLeft: {fileID: 1082207357}
+  squareTopLeft: {fileID: 1052535332}
   speed: 2
   counter: 0
 --- !u!4 &1594032096
@@ -1739,8 +1739,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5264df0e71e0d07458018bd6544497fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer_passive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
-  layer_active: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
+  layerPassive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
+  layerActive: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
 --- !u!58 &1747467582
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1857,8 +1857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5264df0e71e0d07458018bd6544497fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer_passive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
-  layer_active: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
+  layerPassive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
+  layerActive: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
 --- !u!58 &1777733157
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2173,8 +2173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5264df0e71e0d07458018bd6544497fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer_passive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
-  layer_active: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
+  layerPassive: {fileID: 21300000, guid: d822dfd1c9cd29c4b8ee63eae2a285e1, type: 3}
+  layerActive: {fileID: 21300000, guid: a3e0e79619f16d2478df5f03cf99c14a, type: 3}
 --- !u!58 &1927500049
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -7,23 +7,23 @@ public class AddFiguresInScene : MonoBehaviour
     public GameObject square;
     public void AddFigures()
     {
-        int level = scoreNumber.GetComponent<LevelDifficulty>().Learn();
-        float[] getGrid = GetGrid(level);
+        int level = scoreNumber.GetComponent<LevelDifficulty>().GetLevel();
+        float[] grid = GetGrid(level);
         float[] coordMainFigure = new float[2];
-        coordMainFigure[0] = getGrid[0];
-        coordMainFigure[1] = getGrid[1];
+        coordMainFigure[0] = grid[0];
+        coordMainFigure[1] = grid[1];
         int[][,] allFigures = testGameObj.GetComponent<CreateSetFigure>().Create(level);
         int idMainFigure = testGameObj.GetComponent<ChoosingTrueFigure>().Choosing(level);
         int[,] mainFigure = allFigures[idMainFigure];
-        Display(getGrid[2], coordMainFigure, getGrid[3], mainFigure);
-        int numbersOfFigures = level * level;
+        Display(grid[2], coordMainFigure, grid[3], mainFigure);
         float[] coordFirstFigure = new float[2];
-        coordFirstFigure[0] = getGrid[4];
-        coordFirstFigure[1] = getGrid[5];
+        coordFirstFigure[0] = grid[4];
+        coordFirstFigure[1] = grid[5];
+        int numbersOfFigures = level * level;
         for (int i = 0; i < numbersOfFigures; i++)
         {
-            float[] coordFigure = GetCoordFigure(level, coordFirstFigure, i, getGrid[6]);
-            Display(getGrid[6], coordFigure, getGrid[7], allFigures[i]);
+            float[] coordFigure = GetCoordFigure(level, coordFirstFigure, i, grid[6]);
+            Display(grid[6], coordFigure, grid[7], allFigures[i]);
         }
     }
     private float[] GetGrid(int level)
@@ -76,10 +76,10 @@ public class AddFiguresInScene : MonoBehaviour
         square.transform.localScale = new Vector3(sizeFigure, sizeFigure, 1);
         square.GetComponent<SpriteRenderer>().color = new Color(0.85f, 0.85f, 0.85f, 1f);
         Instantiate(square, new Vector3(coordFigure[0], coordFigure[1], 0), Quaternion.identity);
-        int num_elem = coordSquares.GetUpperBound(0) + 1;
+        int numberElement = coordSquares.GetUpperBound(0) + 1;
         float center_X = coordFigure[0] - sizeFigure / 2;
         float center_Y = coordFigure[1] + sizeFigure / 2;
-        for (int i = 0; i < num_elem; i++)
+        for (int i = 0; i < numberElement; i++)
         {
             float coord_X = center_X + sizeSquare / 2 + sizeSquare * coordSquares[i,0];
             float coord_Y = center_Y - sizeSquare / 2 - sizeSquare * coordSquares[i,1];
